@@ -1,20 +1,19 @@
-const {src, dest, watch, parallel, series} = require('gulp')//Функция src используется для выбора исходных файлов для обработки, а dest - для указания места назначения, куда следует записывать результат обработки.
+const {src, dest, watch, parallel, series} = require('gulp')
 
-const scss          = require('gulp-sass')(require('sass'))//Данный плагин позволяет компилировать Sass-файлы в CSS-файлы. 
-const concat        = require('gulp-concat')//обьединение файлв (конкеатенация) и переиминовывание 
-const uglify        = require('gulp-uglify-es').default;//gulp-uglify-es - это плагин для сжатия и минификации JavaScript-кода
-const browsersync   = require('browser-sync').create()//Этот код используется для создания экземпляра BrowserSync - инструмента для автоматической перезагрузки веб-страницы в браузере при изменении файлов проекта.
-const autoprefixer  = require('gulp-autoprefixer')//автоматически добавляет префиксы к CSS свойствам в соответствии с правилами браузеров. Это позволяет избежать проблем с несовместимостью между браузерами и убедиться, что ваши стили будут выглядеть одинаково на всех устройствах.
-const clean         = require ('gulp-clean')//перезатирает папку dist
-const avif          = require ('gulp-avif')//конвертирует картинку в формат avif
-const webp          = require ('gulp-webp')//конвертирует картинку в формат webp
-const imagemin      = require ('gulp-imagemin')//минифицирует картинки 
-// const cached     = require ('gulp-cached')//анализирует файлы, которые нужно обработать, и сохраняет информацию о них в кэше. В следующий раз, когда задача сборки запускается снова, gulp-cached сравнивает текущие файлы с теми, которые были сохранены в кэше, и только те файлы, которые изменились, будут обработаны. 
+const scss          = require('gulp-sass')(require('sass'))
+const concat        = require('gulp-concat')
+const uglify        = require('gulp-uglify-es').default;
+const browsersync   = require('browser-sync').create();
+const autoprefixer  = require('gulp-autoprefixer')
+const clean         = require ('gulp-clean')
+const avif          = require ('gulp-avif')
+const webp          = require ('gulp-webp')
+const imagemin      = require ('gulp-imagemin')
 const fonter        = require('gulp-fonter');
 const ttf2woff2     = require('gulp-ttf2woff2');
-const newer         = require('gulp-newer')// схожий с gulp-cached
+const newer         = require('gulp-newer')
 const svgSprite     = require('gulp-svg-sprite')
-const include       = require('gulp-include')//это возможность использовать шаблоны и многократно использовать код в проекте. Например, вы можете создать отдельный файл с заголовком и подвалом вашего сайта, а затем включать его в каждую страницу вашего проекта. Это позволит вам сократить количество дублирующегося кода и облегчить процесс обновления дизайна.
+const include       = require('gulp-include') 
 
 
 function pages(){
@@ -35,17 +34,17 @@ function fonts(){
     .pipe(dest('app/fonts'))
 }
 
-function images(){//конвертирует и уменьшает 
+function images(){
     return src('app/images/src/*.*' , '!app/images/src/*.svg')
     
-    .pipe(newer('app/images'))//каждый раз нужно проверять состояние паки 
+    .pipe(newer('app/images'))
     .pipe(avif({quality: 50}))
 
-    .pipe(src('app/images/src/*.*'))//каждый раз нужно проверять состояние паки 
+    .pipe(src('app/images/src/*.*'))
     .pipe(newer('app/images'))
     .pipe(webp())
 
-    .pipe(src('app/images/src/*.*'))//каждый раз нужно проверять состояние паки 
+    .pipe(src('app/images/src/*.*'))
     .pipe(newer('app/images'))
     .pipe(imagemin())
 
@@ -74,10 +73,10 @@ function scripts(){
         // 'app/js/**/*.js',
         // '!app/js/main.min.js'
 
-    ])//находим в app/js/main.js или все файлы кроме app/js/main.min.js
-    .pipe(concat('main.min.js'))//переименовываем 
-    .pipe(uglify())//минифицируем 
-    .pipe(dest('app/js'))//выбрасываем в app/js
+    ])
+    .pipe(concat('main.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js'))
     .pipe(browsersync.stream())
 }
 
@@ -93,7 +92,7 @@ function styles() {
         .pipe(browsersync.stream())
     }
 
-function watching(){//отслеживает изминение в файлах (если да), выпонить все что идет после запятой styles и т.д
+function watching(){
     browsersync.init({
         server: {
             baseDir: 'app/'
@@ -113,7 +112,7 @@ function cleanDist(){
     .pipe(clean())
 }
 
-function building(){//перенести все готовые файлы в dist
+function building(){
     return src([
         'app/css/style.min.css',
         'app/images/*.*',
@@ -122,7 +121,7 @@ function building(){//перенести все готовые файлы в dis
         'app/images/sprite.svg',
         'app/fonts/*.*',
         'app/**/*.html',
-    ],{base: 'app'})//сохранить всю файловую структуру 
+    ],{base: 'app'})
     .pipe(dest('dist'))
 
 }
@@ -137,7 +136,5 @@ exports.sprite = sprite;
 exports.scripts = scripts;
 exports.watching = watching;
 
- // команда gulp build 
-
-exports.building = series(cleanDist, building )//series отвечает за последовательное выполнение функций
+exports.building = series(cleanDist, building )
 exports.default = parallel(styles, images, scripts ,pages, watching);

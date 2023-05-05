@@ -4,5 +4,452 @@
 @import 'libs';
 @import 'global';
 
+@media (min-width: 320px){
+    .burger{
+        display: flex;
+    }
+    .header{
+        position: relative;
+        &__inner{
+            display: flex;
+            padding: 35px 0;
+        }
+        &__menu-list{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            transform: translateY(-100%);
+            transition: all .3s ease-in-out;
+            position: absolute;
+            background-color: black;
+            z-index: 100;
+        }
+        &__menu-list--active{
+            transform: translateY(0);
+            margin-top: 60px;
+            display: block;
+        }
+        &__logo{
+            position: relative;
+            z-index: 101;
+        }
+        &__menu-item{
+            padding: 15px 0;
+            font-size: 20px;
+            
+        }
+        &__menu-item>a{
+          color: rgb(255, 255, 255);  
+        }
+        &__menu-item:last-child a{
+            padding-top: 50px;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            padding: 9px 20px 13px 20px;
+            background-color: white;
+            width: 180px;
+            margin: 0 auto;
+            color: black;
+        }
+    }
+    .aperture-studio{
+        text-align: center;
+        background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url(../../images/main-bg.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
 
+        padding-bottom: 39px;
+        background-position-y:50%;
+        background-position-x:60%;
+        &__items-text{
+            padding-top: 200px;
+            padding-bottom: 30px;
+        }
+        &__min-title{
+            padding-bottom: 10px;
+        }
+        &__title{
+            padding-bottom: 10px;
+        }
+        &__icons-items{
+            display: flex;
+            gap: 16px;
+            max-width: 294px;
+            margin: 0 auto;
+        } 
+        &__icons-item> span{
+            font-size: 10px;
+        }
+        &__icons-item{
+            display: flex;
+            // flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+           margin: 0 auto;
+        }
+    }
+    .whatwedo{
+        &__title{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+        &__inner-text{
+            font-size: 1em;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        &__min-title{
+            padding-top: 20px;
+            display: block;
+        }
+        &__text{
+            max-width: 576px; 
+            padding-bottom: 20px; 
+        }
 
+        &__link{
+            display: block;
+            border: 1px solid white;
+            border-radius: 14px;
+            padding: 9px 10px 13px 6px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            left: 30px;
+            width: 143px;
+           margin: 10px 0 ;
+        }
+        &__link::before{
+            content: "";
+            background-image: url(../../images/cicle.svg);
+            background-repeat: no-repeat;
+            padding: 5px 33px 7px 6px;
+        }
+        &__img{
+            margin-top: 40px;
+            margin: 0 auto;
+        }
+
+    }
+    .sunset{
+        background-image: url(/images/sunset-bg.avif);
+        max-width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 30%;
+        position: relative;
+        &__inner{
+            padding-top: 200px;
+            max-width: 298px;
+        }
+        &__icons{
+            padding-top: 250px;
+        }
+        &__icons-items{
+            display: flex;
+            gap: 16px;
+            max-width: 294px;
+            margin: 0 auto;
+        } 
+        &__icons-item> span{
+            font-size: 10px;
+        }
+        &__icons-item{
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+           margin: 0 auto;
+        }
+    }
+    .tools{
+        &__uppertext{
+            text-align: center;
+            padding-top: 50px;
+        }
+        &__title{
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        &__text{
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        &__link{
+            padding-bottom: 40px;
+            display: block;
+            border: 1px solid white;
+            border-radius: 14px;
+            padding: 9px 10px 13px 6px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            left: 30px;
+            width: 152px;
+        }
+        &__link::before{
+            content: "";
+            background-image: url(../../images/cicle.svg);
+            background-repeat: no-repeat;
+            padding: 5px 33px 7px 6px;
+        }
+        &__img{
+            padding-top: 40px;
+        }
+        &__icons{
+            padding: 20px 0;
+        }
+        &__icons-items{
+            display: flex;
+            gap: 16px;
+            max-width: 294px;
+            margin: 0 auto;
+        } 
+        &__icons-item> span{
+            font-size: 10px;
+        }
+        &__icons-item{
+            display: flex;
+            // flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+           margin: 0 auto;
+        }
+    }
+    .monstera{
+        background-image: url(/images/monstera-bg.avif);
+        max-width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 30%;
+        position: relative;
+
+        &__inner{
+            padding-top: 200px;
+            max-width: 273px;
+        }
+        &__icons{
+            padding-top: 250px;
+        }
+        &__icons-items{
+            display: flex;
+            gap: 16px;
+            max-width: 294px;
+            margin: 0 auto;
+        } 
+        &__icons-item > span{
+            font-size: 10px;
+        }
+        &__icons-item{
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+           margin: 0 auto;
+        }
+    }
+    .past-clients{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 100px;
+        &__title{
+            padding-bottom: 10px;
+        }
+        &__text{
+            padding-bottom: 50px;
+        }
+        &__items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+
+        }
+    }
+    .star{
+        background-image: url(../../images/star-bg.avif);
+        max-width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        position: relative;
+        &__inner{
+            padding-top: 200px;
+            max-width: 273px;
+        }
+        &__icons{
+            padding-top: 250px;
+        }
+        &__icons-items{
+            display: flex;
+            gap: 16px;
+            max-width: 241px;
+            margin: 0 auto;
+        } 
+        &__icons-item > span{
+            font-size: 10px;
+        }
+        &__icons-item{
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+           margin: 0 auto;
+        }
+    }
+    .needhelp{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__title{
+            padding-bottom: 10px;
+        }
+        &__text{
+            padding-bottom: 40px;
+        }
+        &__link{
+
+            display: block;
+            border: 1px solid white;
+            border-radius: 14px;
+            padding: 9px 10px 13px 6px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            left: 30px;
+            width: 152px;
+            margin: 0 auto;
+        }
+        &__link::before{
+            content: "";
+            background-image: url(../../images/cicle.svg);
+            background-repeat: no-repeat;
+            padding: 5px 33px 7px 6px;
+        }
+    }
+    .footer{
+        position: relative;
+        text-align: center;
+        &__upper-text{
+            padding-bottom: 50px;
+        }
+        // &__nav{
+        //     display: flex;
+        //     margin-top: 100px;
+        //     margin: 0px 136px; 
+        // }
+        &__nav-items-inner{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+        &__nav:first-child ul{
+            padding-bottom: 60px;
+        }
+        &__nav-item-inner{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #C0C0C0;
+        }
+        &__nav-item-inner>a{
+            color: white;
+        }
+        &__nav::after{
+            content: ""; 
+            position: absolute; 
+            bottom: 220px;
+            margin: 0 auto;
+            width: 250px;
+            left: 0;
+            right: 0;
+            display: block;
+            border-bottom: 2px solid rgb(255, 255, 255);
+        }
+        &__copy::before{
+            content: ""; 
+            position: absolute; 
+            bottom: 460px;
+            margin: 0 auto;
+            width: 250px;
+            left: 0;
+            right: 0;
+            display: block;
+            border-bottom: 2px solid rgb(255, 255, 255);
+        }
+        &__subscribe-title{
+            padding-top: 50px;
+            display: block;
+            padding-bottom: 10px;
+        }
+        &__subscribe-text{
+            padding-bottom: 10px;
+
+        }
+        &__subscribe-input{
+            width: 280px;
+            border-radius: 10px;
+            height: 52px;
+            padding-left: 100px;
+            padding-right: 0;
+            background-color: #FFFFFF;
+        }
+        &__subscribe-input::placeholder{
+            transform: translateX(100%);
+            transition: all .3s ease-in-out;
+        }
+        &__subscribe-input--active::placeholder{
+            transform: translateX(0);
+    
+        }
+        &__subscribe-button{
+            position: relative;
+            background-color: #000000;
+            border-radius: 10px;
+            border: none;
+            top: -41px;
+            left: -100px;
+            width: 63px;
+            height: 30px;
+            cursor: pointer;
+            transform: translateX(204px);
+            transition: all .3s ease-in-out;
+    
+        }
+        &__subscribe-button--active {
+            transform: translateX(2px);
+            width: 63px;
+            color: white;
+            &  &__subscribe-input{
+                padding-left: 0;
+                
+            }
+        }
+        &__form{
+            padding-bottom: 100px;
+        }
+        &__copy{
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        &__copy-text{
+            padding-bottom: 50px;
+        }
+        &__copy-items{
+            display: flex;
+            margin-bottom: 50px;
+        }
+        &__copy-item{
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+}

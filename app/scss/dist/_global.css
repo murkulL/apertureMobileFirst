@@ -1,6 +1,12 @@
 html,
 body {
   height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0C0C0;
+  background-color: #000000;
 }
 
 .wrapper {
@@ -18,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1420px;
   margin: 0 auto;
   padding: 0 10px;
 }
