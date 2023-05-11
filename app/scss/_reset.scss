@@ -1,12 +1,13 @@
 html{
     box-sizing: border-box;
+
   }
   
   *,
   *::after,
   *::before{
     box-sizing: inherit;
-    font-style: normal;
+    font-weight: normal;
   }
   
   ul[class],
@@ -47,6 +48,7 @@ html{
   textarea,
   select {
     font: inherit;
+  
   }
   
   a{

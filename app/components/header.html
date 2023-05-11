@@ -9,13 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="dist/loading-attribute-polyfill.css" />
+    <script src="dist/loading-attribute-polyfill.umd.js" async></script>
     <link rel="stylesheet" href="../../css/style.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrapper loading">
         <header class="header">
+            <div class="container-fluid">
             <div class="container">
                 <div class="header__inner">
                     <svg class="header__logo" width="128" height="31">
@@ -24,16 +33,16 @@
                     <nav class="header__nav">
                         <ul class="header__menu-list">
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Business areas</a>
+                                <a class="header__munu-link" href="#Businessareas">Business areas</a>
                             </li>
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Featured images</a>
+                                <a class="header__munu-link" href="#Featuredimages">Featured images</a>
                             </li>
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Gear cage</a>
+                                <a class="header__munu-link" href="#Gearcage">Gear cage</a>
                             </li>
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Contact</a>
+                                <a class="header__munu-link" href="#Contact">Contact</a>
                             </li>
                             <li class="header__menu-item">
                                 <a class="header__munu-link" href="#">Get template</a>
@@ -45,4 +54,5 @@
                     </div>
                 </div>
             </div>
+        </div>
         </header>

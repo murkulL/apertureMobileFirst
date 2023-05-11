@@ -6,7 +6,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  font-style: normal;
+  font-weight: normal;
 }
 
 ul[class],

@@ -9,13 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="dist/loading-attribute-polyfill.css" />
+    <script src="dist/loading-attribute-polyfill.umd.js" async></script>
     <link rel="stylesheet" href="../../css/style.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrapper loading">
         <header class="header">
+            <div class="container-fluid">
             <div class="container">
                 <div class="header__inner">
                     <svg class="header__logo" width="128" height="31">
@@ -24,16 +33,16 @@
                     <nav class="header__nav">
                         <ul class="header__menu-list">
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Business areas</a>
+                                <a class="header__munu-link" href="#Businessareas">Business areas</a>
                             </li>
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Featured images</a>
+                                <a class="header__munu-link" href="#Featuredimages">Featured images</a>
                             </li>
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Gear cage</a>
+                                <a class="header__munu-link" href="#Gearcage">Gear cage</a>
                             </li>
                             <li class="header__menu-item">
-                                <a class="header__munu-link" href="#">Contact</a>
+                                <a class="header__munu-link" href="#Contact">Contact</a>
                             </li>
                             <li class="header__menu-item">
                                 <a class="header__munu-link" href="#">Get template</a>
@@ -45,6 +54,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </header>
 
 <main class="main">
@@ -79,20 +89,20 @@
         </div>
     </section>
 
-    <section class="whatwedo">
+    <section class="whatwedo" id="Businessareas" >
         <div class="container">
             <div class="whatwedo__inner">
                 <p class="whatwedo__title">What we do.</p>
                 <h3 class="whatwedo__inner-text">The areas that we're specialized in.</h3>
                 <ul class="whatwedo__items">
-                    <li class="whatwedo__item">
+                    <li class="whatwedo__item" >
                         <img class="whatwedo__img" src="../../images/whatwedo-img1.jpg" alt="whatwedo-img">
                         <div class="whatwedo__box-text">
                             <b class="whatwedo__min-title">Product Photography</b>
                             <p class="whatwedo__text">Cras commodo consequat orci, in convallis risus egestas non. Nulla
                                 efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-                            <a class="whatwedo__link" href="#">Read more</a>
-                        </div>
+                        <a class="whatwedo__link" href="#" data-number="1">Read more</a>
+                    </div>
                     </li>
                     <li class="whatwedo__item">
                         <img class="whatwedo__img" src="../../images/whatwedo-img2.jpg" alt="whatwedo-img">
@@ -101,8 +111,8 @@
                             <p class="whatwedo__text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices,
                                 orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus.
                                 Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
-                            <a class="whatwedo__link" href="#">Read more</a>
-                        </div>
+                        <a class="whatwedo__link" href="#" data-number="2">Read more</a>
+                    </div>
                     </li>
                     <li class="whatwedo__item">
                         <img class="whatwedo__img" src="../../images/whatwedo-img3.jpg" alt="whatwedo-img">
@@ -111,9 +121,9 @@
                             <p class="whatwedo__text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
                                 Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus
                                 egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac,
-                                cursus quam.</p>
-                            <a class="whatwedo__link" href="#">Read more</a>
-                        </div>
+                                cursus quam.</p>                                                    
+                        <a class="whatwedo__link" href="#" data-number="3">Read more</a>
+                    </div>
                     </li>
                     <li class="whatwedo__item">
                         <img class="whatwedo__img" src="../../images/whatwedo-img4.jpg" alt="whatwedo-img">
@@ -122,9 +132,10 @@
                             <p class="whatwedo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                                 scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi
                                 neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna
-                                turpis.</p>
-                            <a class="whatwedo__link" href="#">Read more</a>
-                        </div>
+                                turpis.
+                            </p>                                                   
+                        <a class="whatwedo__link" href="#" data-number="4">Read more</a>
+                    </div>
                     </li>
                 </ul>
             </div>
@@ -157,7 +168,7 @@
         </div>
     </section>
 
-    <section class="tools">
+    <section class="tools" id="Featuredimages">
         <div class="container">
             <div class="tools__inner">
                 <div class="tools__box-text">
@@ -181,7 +192,7 @@
                                 <use href="../../images/sprite.svg#iso" />
                             </svg><span>100</span></li>
                         <li class="tools__icons-item"><svg width="16" height="16">
-                                <use href="../../images/sprite.sv../..gimages" />
+                                <use href="../../images/sprite.svg#local" />
                             </svg><span>Iceland</span></li>
                     </ul>
                 </div>
@@ -195,6 +206,7 @@
                 <b class="monstera__min-title">Monstera Leafs</b>
                 <p class="monstera__text">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut
                     faucibus orci tincidunt.</p>
+            </div>
                 <div class="monstera__icons">
                     <ul class="monstera__icons-items">
                         <li class="monstera__icons-item"><svg width="16" height="16">
@@ -211,11 +223,10 @@
                             </svg><span>Iceland</span></li>
                     </ul>
                 </div>
-            </div>
         </div>
     </section>
 
-    <section class="past-clients">
+    <section class="past-clients" id="Gearcage">
         <div class="container">
             <h2 class="past-clients__title">Past clients</h2>
             <p class="past-clients__text">Trusted by your favourite companies</p>
@@ -250,6 +261,7 @@
                 <b class="star__min-title">Star fall in the Himalayas</b>
                 <p class="star__text">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
                     congue et, vulputate ut ligula.</p>
+                </div>
                 <div class="star__icons">
                     <ul class="star__icons-items">
                         <li class="star__icons-item"><svg width="16" height="16">
@@ -265,7 +277,7 @@
                                 <use href="../../images/sprite.svg#local" />
                             </svg><span>Iceland</span></li>
                     </ul>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -282,9 +294,9 @@
 
 
 
-<footer class="footer">
+<footer class="footer" id="Contact">
 
-    <div class="container">
+    <div class="container-fluid">
 
         <ul class="footer__nav">
 
@@ -368,7 +380,7 @@
 
                 <form class="footer__form" action="#">
 
-                    <input class="footer__subscribe-input" type="email" placeholder="blablalba@gmail.com" id="email"
+                    <input class="footer__subscribe-input" type="email" placeholder="blablalba@gmail.com" id="email" disabled
 
                         name="email" required>
 
