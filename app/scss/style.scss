@@ -155,7 +155,7 @@
     .aperture-studio{
         margin-top: 90px;
         text-align: center;
-        background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url(../../images/main-bg.avif);
+        background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url(../images/main-bg.avif);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -237,7 +237,7 @@
         }
         &__link::before{
             content: "";
-            background-image: url(../../images/cicle.svg);
+            background-image: url(../images/cicle.svg);
             background-repeat: no-repeat;
             padding: 5px 33px 7px 6px;
         }
@@ -259,7 +259,7 @@
         }
     }
     .sunset{
-        background-image: url(/images/sunset-bg.avif);
+        background-image: url(../images/sunset-bg.avif);
         max-width: 100%;
         height: 600px;
         background-repeat: no-repeat;
@@ -329,7 +329,7 @@
         }
         &__link::before{
             content: "";
-            background-image: url(../../images/cicle.svg);
+            background-image: url(../images/cicle.svg);
             background-repeat: no-repeat;
             padding: 5px 33px 7px 6px;
         }
@@ -358,7 +358,7 @@
         }
     }
     .monstera{
-        background-image: url(/images/monstera-bg.avif);
+        background-image: url(../images/monstera-bg.avif);
         max-width: 100%;
         height: 600px;
         background-repeat: no-repeat;
@@ -417,7 +417,7 @@
         }
     }
     .star{
-        background-image: url(../../images/star-bg.avif);
+        background-image: url(../images/star-bg.avif);
         max-width: 100%;
         height: 600px;
         background-repeat: no-repeat;
@@ -481,7 +481,7 @@
         }
         &__link::before{
             content: "";
-            background-image: url(../../images/cicle.svg);
+            background-image: url(../images/cicle.svg);
             background-repeat: no-repeat;
             padding: 5px 33px 7px 6px;
         }

@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #170e0e;
+  background-color: #000000;
 }
 
 .lds-ellipsis {
@@ -329,7 +329,7 @@ body::-webkit-scrollbar-track {
   .aperture-studio {
     margin-top: 90px;
     text-align: center;
-    background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url(../../images/main-bg.avif);
+    background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url(../images/main-bg.avif);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -410,7 +410,7 @@ body::-webkit-scrollbar-track {
   }
   .whatwedo__link::before {
     content: "";
-    background-image: url(../../images/cicle.svg);
+    background-image: url(../images/cicle.svg);
     background-repeat: no-repeat;
     padding: 5px 33px 7px 6px;
   }
@@ -432,7 +432,7 @@ body::-webkit-scrollbar-track {
   }
 
   .sunset {
-    background-image: url(/images/sunset-bg.avif);
+    background-image: url(../images/sunset-bg.avif);
     max-width: 100%;
     height: 600px;
     background-repeat: no-repeat;
@@ -502,7 +502,7 @@ body::-webkit-scrollbar-track {
   }
   .tools__link::before {
     content: "";
-    background-image: url(../../images/cicle.svg);
+    background-image: url(../images/cicle.svg);
     background-repeat: no-repeat;
     padding: 5px 33px 7px 6px;
   }
@@ -531,7 +531,7 @@ body::-webkit-scrollbar-track {
   }
 
   .monstera {
-    background-image: url(/images/monstera-bg.avif);
+    background-image: url(../images/monstera-bg.avif);
     max-width: 100%;
     height: 600px;
     background-repeat: no-repeat;
@@ -592,7 +592,7 @@ body::-webkit-scrollbar-track {
   }
 
   .star {
-    background-image: url(../../images/star-bg.avif);
+    background-image: url(../images/star-bg.avif);
     max-width: 100%;
     height: 600px;
     background-repeat: no-repeat;
@@ -658,7 +658,7 @@ body::-webkit-scrollbar-track {
   }
   .needhelp__link::before {
     content: "";
-    background-image: url(../../images/cicle.svg);
+    background-image: url(../images/cicle.svg);
     background-repeat: no-repeat;
     padding: 5px 33px 7px 6px;
   }
