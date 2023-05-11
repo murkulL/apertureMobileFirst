@@ -83,7 +83,7 @@ function buttonWhatWeDo() {
           Swal.fire({
             title: 'Product Photography',
             html: 'Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.<br><br><a href="https://example.com" target="_blank" class="whatwedo__link-modal">Link</a>',
-            imageUrl: './app/images/whatwedo-img1.jpg',
+            imageUrl: '../app/images/whatwedo-img1.jpg',
             imageWidth: 300,
             imageHeight: 300,
             background: 'black',
@@ -98,7 +98,7 @@ function buttonWhatWeDo() {
           Swal.fire({
             title: 'Architecture Photography',
             html: 'Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.<br><br><a href="https://example.com" target="_blank" class="whatwedo__link-modal">Link</a>',
-            imageUrl: './app/images/whatwedo-img2.jpg',
+            imageUrl: '../app/images/whatwedo-img2.jpg',
             imageWidth: 300,
             imageHeight: 300,
             background: 'black',
@@ -113,7 +113,7 @@ function buttonWhatWeDo() {
           Swal.fire({
             title: 'Drone Photography',
             html: 'Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.<br><br><a href="https://example.com" target="_blank" class="whatwedo__link-modal">Link</a>',
-            imageUrl: './app/images/whatwedo-img3.jpg',
+            imageUrl: '../app/images/whatwedo-img3.jpg',
             imageWidth: 300,
             imageHeight: 300,
             background: 'black',
@@ -128,7 +128,7 @@ function buttonWhatWeDo() {
           Swal.fire({
             title: 'WILDLIFE PHOTOGRAPHY',
             html: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.<br><br><a href="https://example.com" target="_blank" class="whatwedo__link-modal">Link</a>',
-            imageUrl: './app/images/whatwedo-img4.jpg',
+            imageUrl: '../app/images/whatwedo-img4.jpg',
             imageWidth: 300,
             imageHeight: 300,
             background: 'black',
