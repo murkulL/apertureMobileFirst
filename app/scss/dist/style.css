@@ -956,7 +956,8 @@ body::-webkit-scrollbar-track {
     margin-left: 0;
   }
   .header__menu-item:last-child:hover {
-    transform: scale(1.1);
+    animation-name: jump;
+    animation-duration: 0.5s;
   }
   .header__menu-item:first-child {
     font-size: 13px;

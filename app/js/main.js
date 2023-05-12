@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   setTimeout(() => {
     document.querySelector('.loading').classList.remove('loading')
     document.querySelector('.lds-ellipsis').classList.remove('lds-ellipsis')
-  },1000 )
+  },2000 )
 });
 
 window.addEventListener('load',function(){
