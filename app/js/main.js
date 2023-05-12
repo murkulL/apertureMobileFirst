@@ -38,6 +38,7 @@ function activeButton(){
                 showConfirmButton: false,
                 timer: 1500,
                 scrollbarPadding: false,
+                allowOutsideClick: false,
               })
         } else {
             Swal.fire({
@@ -47,7 +48,8 @@ function activeButton(){
                 showConfirmButton: false,
                 timer: 1000,
                 scrollbarPadding: false,
-                allowOutsideClick: false
+                allowOutsideClick: false,
+                focusConfirm: false
               })
             input.form.reset(); 
         }
@@ -75,6 +77,7 @@ function burgerButton() {
 }
 function buttonWhatWeDo() {
   const buttons = document.querySelectorAll('.whatwedo__link');
+  
   buttons.forEach(function(button) {
     button.addEventListener('click', function() {
       const value = button.dataset.number;
@@ -143,17 +146,13 @@ function buttonWhatWeDo() {
   });
 }
 const anchors = document.querySelectorAll('a[href*="#"]')
-    
-    for (let anchor of anchors) {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault()
-        
-        const blockID = anchor.getAttribute('href').substr(1)
-        
-        document.getElementById(blockID).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        })
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      const blockID = anchor.getAttribute('href').substr(1)
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
       })
-    }
-    
+    })
+  }

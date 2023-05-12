@@ -37,7 +37,8 @@ function activeButton() {
         title: 'Successfully',
         showConfirmButton: false,
         timer: 1500,
-        scrollbarPadding: false
+        scrollbarPadding: false,
+        allowOutsideClick: false
       });
     } else {
       Swal.fire({
@@ -47,7 +48,8 @@ function activeButton() {
         showConfirmButton: false,
         timer: 1000,
         scrollbarPadding: false,
-        allowOutsideClick: false
+        allowOutsideClick: false,
+        focusConfirm: false
       });
       input.form.reset();
     }

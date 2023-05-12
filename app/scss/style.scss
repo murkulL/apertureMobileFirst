@@ -81,9 +81,15 @@
 .swal2-styled{
 	padding: 0.625em 3.1em;
 }
-.swal2-container.swal2-center.swal2-backdrop-show{
-    overflow: hidden !important;
+.swal2-shown{
+	overflow: hidden !important;
+    height: 100% !important;
 }
+body.swal2-height-auto{
+    overflow: hidden !important;
+    height: 100% !important ;
+}
+
 
 @media (min-width: 320px){
     .burger{
@@ -312,6 +318,8 @@
         &__uppertext{
             text-align: center;
             padding-top: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         &__title{
             text-align: center;
