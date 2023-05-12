@@ -399,20 +399,28 @@ body::-webkit-scrollbar-track {
   }
   .whatwedo__link {
     display: block;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 14px;
-    padding: 9px 10px 13px 6px;
-    color: black;
-    background-color: white;
-    left: 30px;
-    width: 143px;
+    padding: 9px 10px 13px 42px;
+    color: #000;
+    background-color: #fff;
+    width: 152px;
+    font-size: 16px;
+    text-align: center;
+    height: 42px;
+    position: relative;
     margin-bottom: 30px;
   }
   .whatwedo__link::before {
     content: "";
     background-image: url(../images/cicle.svg);
     background-repeat: no-repeat;
-    padding: 5px 33px 7px 6px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 4px;
   }
   .whatwedo__img {
     margin-top: 40px;
@@ -489,22 +497,29 @@ body::-webkit-scrollbar-track {
     padding-bottom: 40px;
   }
   .tools__link {
-    padding-bottom: 40px;
     display: block;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 14px;
-    padding: 9px 10px 13px 6px;
-    color: black;
-    background-color: white;
-    left: 30px;
+    padding: 9px 10px 13px 42px;
+    color: #000;
+    background-color: #fff;
     width: 152px;
     margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    height: 42px;
+    position: relative;
   }
   .tools__link::before {
     content: "";
     background-image: url(../images/cicle.svg);
     background-repeat: no-repeat;
-    padding: 5px 33px 7px 6px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 4px;
   }
   .tools__img {
     padding-top: 40px;
@@ -647,20 +662,28 @@ body::-webkit-scrollbar-track {
   }
   .needhelp__link {
     display: block;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 14px;
-    padding: 9px 10px 13px 6px;
-    color: black;
-    background-color: white;
-    left: 30px;
+    padding: 9px 10px 13px 42px;
+    color: #000;
+    background-color: #fff;
     width: 152px;
     margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    height: 42px;
+    position: relative;
   }
   .needhelp__link::before {
     content: "";
     background-image: url(../images/cicle.svg);
     background-repeat: no-repeat;
-    padding: 5px 33px 7px 6px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 4px;
   }
 
   .footer {
@@ -881,7 +904,7 @@ body::-webkit-scrollbar-track {
   }
   .footer__subscribe-button {
     left: -23px;
-    transform: translateX(206px);
+    transform: translateX(212px);
   }
   .footer__subscribe-button--active {
     transform: translateX(-150px);
